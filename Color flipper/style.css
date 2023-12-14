@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Apple Chancery',cursive;
+    
+}
+ #heading{
+    text-align:left;
+    font-size: 30px;
+    color: greenyellow ;
+   
+}
+#color{
+    float: right;
+    margin-right: 15px;
+}
+#btn{
+    margin: 300px 700px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900px;
+    background-color: yellow;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: aqua;
+}
