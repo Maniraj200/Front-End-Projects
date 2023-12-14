@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB calculator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>EB bill calculator</h2>
+        <div id="inputdiv">
+            <input type="text" id="input" placeholder="Enter the units">
+        </div>
+        <div id="btn">
+            <button type="submit" onclick="ebBill()">Calculate</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        let cost;
+        function ebBill(){
+        const units = Number(document.querySelector("input").value)
+        if(units <= 50){
+         cost = (units*0.75);
+        }else if(units > 50 && units <= 100){
+          cost = ((50*0.75) + ((units - 50)*1.00));
+        }else if(units > 100 && units <=200){
+            cost = ((50*0.75) +((units -50)*1.00) +((units - 100)*1.30));
+        }else{
+            cost = ((50*0.75) +((units -50)*1.00) +((units - 100)*1.30) + ((units - 150)*1.50));
+        }
+
+        let result = document.getElementById("result");
+        result.innerHTML =`Rs. ${cost} `
+    }
+    var x = 5.47;
+    console.log(Math.round(x));
+
+    var y = 9.07
+    console.log(Math.ceil(y));
+        
+    </script>
+</body>
+</html>
