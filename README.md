@@ -5,3 +5,4 @@
 (4)Currency Converter-Converting the currency of one country to another using API call by getting the API link and converting into JavaScript code using JSON.
 (5)FD-Fixed Dposit calucation using Javascript according to the rate of interest per month by using Principle,Tenure,Interest.
 (6)City Stats-Onclicking the a city from the dropdown button It will show the particular city Population,Literacy Rate and Language spoken in that city using Query Selector in JavaScript
+(7) YouTube Cloning-The Exact copy of the YouTube Homepage is done using HTML and CSS with all the properties of the CSS stylings.
